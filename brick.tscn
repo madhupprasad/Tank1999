@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://buuj43hr6w2wy"]
+
+[ext_resource type="Script" path="res://brick.gd" id="1_psl5d"]
+[ext_resource type="Texture2D" uid="uid://dp61psf8f15s" path="res://brick.png" id="1_xa4kv"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvit0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ej0qm"]
+size = Vector2(176, 96)
+
+[node name="Brick" type="StaticBody2D" groups=["bricks"]]
+physics_material_override = SubResource("PhysicsMaterial_cvit0")
+script = ExtResource("1_psl5d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(84, 42)
+shape = SubResource("RectangleShape2D_ej0qm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(83, 43)
+scale = Vector2(0.689851, 0.512276)
+texture = ExtResource("1_xa4kv")

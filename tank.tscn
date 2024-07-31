@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkc1vktvnlfcc"]
+
+[ext_resource type="Script" path="res://tank.gd" id="1_4e3xy"]
+[ext_resource type="PackedScene" uid="uid://c7hm7qkkm1rb0" path="res://bullet.tscn" id="2_aev5k"]
+[ext_resource type="Texture2D" uid="uid://cumhjfkixy8nv" path="res://left_facing_tank.png" id="2_rs7kp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a5lho"]
+size = Vector2(66, 32)
+
+[node name="Tank" type="CharacterBody2D"]
+position = Vector2(561, 317)
+script = ExtResource("1_4e3xy")
+Bullet = ExtResource("2_aev5k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_a5lho")
+
+[node name="TankSprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.99998, 7.62939e-06)
+scale = Vector2(0.0719404, 0.0627742)
+texture = ExtResource("2_rs7kp")
+
+[node name="BulletSpawn" type="Marker2D" parent="."]
+position = Vector2(-43, 0)
