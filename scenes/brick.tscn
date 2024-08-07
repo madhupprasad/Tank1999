@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://buuj43hr6w2wy"]
 
-[ext_resource type="Script" path="res://brick.gd" id="1_psl5d"]
-[ext_resource type="Texture2D" uid="uid://dp61psf8f15s" path="res://brick.png" id="1_xa4kv"]
+[ext_resource type="Script" path="res://code/brick.gd" id="1_psl5d"]
+[ext_resource type="Texture2D" uid="uid://dp61psf8f15s" path="res://assets/brick.png" id="1_xa4kv"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvit0"]
 

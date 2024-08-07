@@ -1,11 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://wistd7agp1b5"]
+[gd_scene load_steps=5 format=3 uid="uid://wistd7agp1b5"]
 
-[ext_resource type="PackedScene" uid="uid://buuj43hr6w2wy" path="res://brick.tscn" id="1_hj0a2"]
-[ext_resource type="PackedScene" uid="uid://dkc1vktvnlfcc" path="res://tank.tscn" id="2_qjett"]
+[ext_resource type="PackedScene" uid="uid://buuj43hr6w2wy" path="res://scenes/brick.tscn" id="1_hj0a2"]
+[ext_resource type="Script" path="res://scenes/ground.gd" id="1_m340v"]
+[ext_resource type="PackedScene" uid="uid://dkc1vktvnlfcc" path="res://scenes/tank.tscn" id="2_qjett"]
+[ext_resource type="PackedScene" uid="uid://5vu8h4sk0gv7" path="res://scenes/enemy.tscn" id="2_ug4kt"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Ground" type="Node2D"]
+script = ExtResource("1_m340v")
+Enemy = ExtResource("2_ug4kt")
+
+[node name="Brick12" parent="." instance=ExtResource("1_hj0a2")]
+
+[node name="Brick16" parent="." instance=ExtResource("1_hj0a2")]
+position = Vector2(793, 556)
+
+[node name="Brick15" parent="." instance=ExtResource("1_hj0a2")]
+position = Vector2(618, 556)
+
+[node name="Brick14" parent="." instance=ExtResource("1_hj0a2")]
+position = Vector2(443, 556)
+
+[node name="Brick13" parent="." instance=ExtResource("1_hj0a2")]
+position = Vector2(268, 556)
 
 [node name="Brick" parent="." instance=ExtResource("1_hj0a2")]
+position = Vector2(93, 556)
 
 [node name="Brick2" parent="." instance=ExtResource("1_hj0a2")]
 position = Vector2(247, 2)
@@ -44,4 +63,7 @@ position = Vector2(88, 415)
 rotation = 1.5708
 
 [node name="Tank" parent="." instance=ExtResource("2_qjett")]
-position = Vector2(470, 560)
+position = Vector2(495, 470)
+
+[node name="SpawnPoint1" type="Marker2D" parent="."]
+position = Vector2(650, 321)

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dkc1vktvnlfcc"]
 
-[ext_resource type="Script" path="res://tank.gd" id="1_4e3xy"]
-[ext_resource type="PackedScene" uid="uid://c7hm7qkkm1rb0" path="res://bullet.tscn" id="2_aev5k"]
-[ext_resource type="Texture2D" uid="uid://cumhjfkixy8nv" path="res://left_facing_tank.png" id="2_rs7kp"]
+[ext_resource type="Script" path="res://code/tank.gd" id="1_4e3xy"]
+[ext_resource type="PackedScene" uid="uid://c7hm7qkkm1rb0" path="res://scenes/bullet.tscn" id="2_aev5k"]
+[ext_resource type="Texture2D" uid="uid://cumhjfkixy8nv" path="res://assets/left_facing_tank.png" id="2_rs7kp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a5lho"]
 size = Vector2(66, 32)

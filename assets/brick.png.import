@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cumhjfkixy8nv"
-path="res://.godot/imported/left_facing_tank.png-96a48539836c08df520edc260f5dae6a.ctex"
+uid="uid://dp61psf8f15s"
+path="res://.godot/imported/brick.png-2752dffcc7852625bd2ce25e2bde0c3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://left_facing_tank.png"
-dest_files=["res://.godot/imported/left_facing_tank.png-96a48539836c08df520edc260f5dae6a.ctex"]
+source_file="res://assets/brick.png"
+dest_files=["res://.godot/imported/brick.png-2752dffcc7852625bd2ce25e2bde0c3a.ctex"]
 
 [params]
 
