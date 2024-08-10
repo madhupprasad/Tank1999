@@ -4,17 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://cumhjfkixy8nv" path="res://assets/left_facing_tank.png" id="1_crpie"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5e752"]
-size = Vector2(80, 32.9609)
+size = Vector2(66, 30)
 
 [node name="Enemy" type="CharacterBody2D" groups=["enemies"]]
 position = Vector2(35, -4)
 script = ExtResource("1_10s7b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-31, 3.51953)
+position = Vector2(-37, 3)
 shape = SubResource("RectangleShape2D_5e752")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-32, 2.879)
+rotation = 3.14159
 scale = Vector2(0.0723742, 0.0634549)
 texture = ExtResource("1_crpie")
